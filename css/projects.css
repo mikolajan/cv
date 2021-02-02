@@ -1,0 +1,40 @@
+.project {
+  padding: 15px;
+  background: #DCDCDC;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.project:hover {
+  background: #c8c8c8;
+}
+
+.project-link {
+  float: right;
+  background: #9BD770;
+  border: 1px solid black;
+  padding: 5px 10px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.project-link:hover {
+  background: #66B032;
+}
+
+.project-link:active, .project-link:link, .project-link:visited {
+  text-decoration: none;
+}
+
+.project-tag {
+  color: white;
+  background: #00003b;
+  margin-right: 10px;
+  padding: 3px 10px;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+.project-description {
+  margin: 15px 0 10px 20px;
+}

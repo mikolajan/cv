@@ -1,0 +1,40 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #00003b;
+}
+
+.text-big {
+  font-size: 1.2em;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-small {
+  font-size: 0.7em;
+}
+
+.text-subtitle {
+  font-size: 1.4em;
+}
+
+.text-title-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3em;
+  color: #222;
+}
+
+.text-title-vacancy {
+  font-size: 2em;
+  color: #666;
+}
+
+.text-title-section {
+  font-size: 1.7em;
+}

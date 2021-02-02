@@ -1,0 +1,29 @@
+body {
+  background-color: #c8c8c8;
+}
+
+ul {
+  padding-left: 30px;
+}
+
+li {
+  padding-left: 10px;
+  list-style: none inside;
+}
+
+ul, li {
+  margin: 10px 0;
+}
+
+.first-li:before {
+  content: "\2705\00A0\00A0";
+}
+
+.second-li:before {
+  content: "\1F44D\00A0\00A0";
+}
+
+.future-li:before {
+  content: "\229A\00A0\00A0";
+}
+

@@ -1,66 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Nikolay Zhurilo. Software Engineer Ruby on Rails</title>
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/ruby.png">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/css.css">
+
+  <link rel="stylesheet" href="css/reset.css">
+
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/info.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/text.css">
 </head>
 <body>
-<div class="container">
-    <div class="row">
-      <div class="eight columns">
-        <p></p>
-        <h1>Nikolay Zhurilo</h1>
-        <h3>Software Engineer Ruby on Rails</h3>
-        <h4>Moscow, Russian Federation</h4>
-        <p>Phone: <a class="contacts" href="tel:+79260699887">+7 926 069 98 87</a></p>
-        <p>Email: <a class="contacts" href="mailto:nikolay.i.zhirilo@gmail.com">
-        nikolay.i.zhirilo@gmail.com</a></p>
-        <p>My profile:
-          <a class="button" href="https://github.com/mikolajan">GitHub</a>
-          <a class="button" href="https://www.codewars.com/users/mikolajan">Codewars</a>
-          <a class="button" href="https://edabit.com/user/fhkoxFW5oFhZHKm7d">Edabit</a>
-        </p>
-      </div>
-      <div class="four columns">
-        <p></p>
-        <img class="foto" src="images/nick_zhur.jpg" alt="[nikolay zhurilo foto]">
+
+<div class="dropdown-menu">
+  <button class="menu-btn">Навигация</button>
+  <div class="menu-content">
+    <a href="#info">Информация</a>
+    <a href="#education">Образование</a>
+    <a href="#skills">Опыт</a>
+    <a href="#projects">Проекты</a>
+  </div>
+</div>
+
+<div class="content">
+  <h1 class="title-name text-title-name text-center">Журило Николай</h1>
+  <h2 class="title-vacancy text-title-vacancy text-center">Software Engineer Ruby on Rails</h2>
+  <div class="info" id="info">
+    <div class="section">
+      <div class="row">
+        <div class="col col-2-3">
+          <div class="contacts">
+            <h4 class="text-subtitle">Место жительства: Россия, Москва</h4>
+            <p class="contact text-big"><i class="fas fa-phone-alt fa-contact"></i>: <a class="contact-link" href="tel:+79260699887">+7 926 069 98 87</a></p>
+            <p class="contact text-big"><i class="far fa-envelope"></i>: <a class="contact-link" href="mailto:nikolay.i.zhirilo@gmail.com">nikolay.i.zhirilo@gmail.com</a></p>
+            <p class="contact text-big"> Ссылки:
+              <a class="contact-link" href="https://t.me/mikolajan" title="https://t.me/mikolajan">Telegram</a>,
+              <a class="contact-link" href="https://github.com/mikolajan" title="https://github.com/mikolajan">GitHub</a>.
+              <!-- <a href="" title="">HeadHunter</a>. -->
+            </p>
+            <p class="about-me">После окончания ВУЗа получил степень кандидата химических наук. Работаю в <a class="contact-link" href="https://www.mirea.ru/" title="https://www.mirea.ru/">РТУ МИРЭА</a>. Работа преподавателем и научным консультантом научили легко анализировать материал, формулировать цели и задачи как себе, так и другим. У меня метематический склад ума. Программированием увлёкся в 2018 году, активно изучаю Ruby c 2019.</p>
+          </div>
+        </div>
+        <div class="col col-1-3">
+          <img class="info-img" src="images/nick_zhur.jpg" alt="zhurilo nikolay foto">
+        </div>
       </div>
     </div>
-    <div class="row">
-      <h3>Education</h3>
-      <h4>Moscow State Academy of fine chemical technology named after M.V.Lomonosov</h4>
+  </div>
+  <div class="education" id="education">
+    <div class="section">
+      <h3 class="text-title-section">Образование</h3>
       <ul>
-        <li>2004-2008 Bachelor of Science in Molecular and cellular biotechnology</li>
-        <li>2008-2010 Master of Science in Molecular and cellular biotechnology</li>
+        <li class="first-li">Московская государственная академия тонкой химической технологии имени М.В. Ломоносова
+          <ul><li class="second-li">2004&ndash;2010 Магистр техники и технологии по специальности Молекулярная и клеточная биотехнология</li></ul>
+        </li>
+        <li class="first-li"><a href="https://goodprogrammer.ru/">Хороший программист</a> &mdash; Ruby and Rails онлайн курсы
+          <ul><li class="second-li">31.05.2020&ndash;05.10.2020 онлайн&ndash;интенсив Rails Emerald 2020</li></ul>
+        </li>
       </ul>
-      <h4>GoodProgrammer — Ruby and Rails online course</h4>
-      <ul><li>Rails Emerald 2020</li></ul>
     </div>
-  <div class="row">
-    <h3>Job experience</h3>
-    <p>I do not have relevant experience yet, but i develop my skills and already have experience in programming web applications.</p>
   </div>
-  <div class="row">
-    <h3>My skills</h3>
-    <button class="button-primary">Ruby</button>
-    <button class="button-primary">Ruby on Rails</button>
-    <button class="button-primary">RSpec</button>
-    <button class="button-primary">Git</button>
-    <button class="button-primary">SQLite</button>
-    <button class="button-primary">HTML</button>
-    <button class="button-primary">CSS</button>
-  </div>
-    <div class="row">
-      <h3>About me</h3>
-      <p>I am an research scientist (since 2010) and assistant (since 2015). I have experience of supervising of students in drafting their thesis and experience in writing scientific articles. Languages: Russian — native, English — pre-intermediate.</p>
+
+  <div class="skills" id="skills">
+    <div class="section">
+        <h3 class="text-title-section">Опыт</h3>
+        <ul>
+          <li class="first-li">Ubuntu Linux, WSL2 Windows;</li>
+          <li class="first-li">RubyMine, VS Code, Sublime;</li>
+          <li class="first-li">Git;</li>
+          <li class="first-li">Heroku;</li>
+          <li class="first-li">HTML, CSS, Bootstrap, JavaScript (базовый уровень);</li>
+          <li class="first-li">ООП, Паттерны проектирования, SOLID, TDD, BDD, RSpec, Minitest, Capybara, REST, DRY;</li>
+          <li class="first-li">Ruby &mdash; RVM, IRB, CodeStyle и работа с гемами;</li>
+          <li class="first-li">Ruby on Rails &mdash; MVC, Active Record, I18n + локали, Devise, FactoryBot, Action Mailer (Sendgrid), AWS, Dotenv;</li>
+  <!--          DigitalOcean, Nginx + Passenger, развертывание VPS сервера, Гем Capistrano - работал с гемом для быстрого деплоя на сервер -->
+          <li class="first-li">Базы данных &mdash; PostgreSQL, SQLite;</li>
+          <li class="first-li">English &mdash; Intermediate (чтение), Pre&ndash;Intermediate (разговор);</li>
+          <li class="future-li">следующий шаг: Docker, React.</li>
+        </ul>
     </div>
+  </div>
+
+  <div class="projects" id="projects">
+    <div class="section">
+      <h3 class="text-title-section">Проекты</h3>
+      <div class="row">
+        <div class="col col-1-2">
+          <div class="project">
+            <span class="text-subtitle">Events</span>
+            <a class="project-link" href="https://github.com/mikolajan/askme" title="https://github.com/mikolajan/askme">Github</a>
+            <a class="project-link" href="https://mikolajan-events.herokuapp.com/" title="https://mikolajan-events.herokuapp.com/">Heroku</a>
+            <p class="project-description mt-1 mb-1">Агрегатор мероприятий</p>
+          </div>
+        </div>
+
+        <div class="col col-1-2">
+          <div class="project">
+            <span class="text-subtitle">Askme</span>
+            <a class="project-link" href="https://github.com/mikolajan/askme" title="https://github.com/mikolajan/askme">Github</a>
+            <a class="project-link" href="https://mikolajan-askme.herokuapp.com/" title="https://mikolajan-askme.herokuapp.com/">Heroku</a>
+            <p class="project-description mt-1 mb-1">Аналог сайта Ask.fm</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col col-1-2">
+          <div class="project">
+            <span class="text-subtitle">Hangman</span>
+            <a class="project-link" href="https://github.com/mikolajan/hangman" title="https://github.com/mikolajan/hangman">Github</a>
+            <p class="project-description">Аналог игры Виселица</p>
+          </div>
+        </div>
+
+        <div class="col col-1-2">
+          <div class="project">
+            <span class="text-subtitle">Быки и коровы</span>
+            <span class="project-link">Github</span>
+            <p class="project-description mt-1 mb-1">Игрок отгадывает слово, получая подсказки</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 </body>
 </html>
